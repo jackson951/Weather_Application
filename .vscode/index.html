@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="app-title">Dynamic Weather App</h1>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+        <main class="weather-info" id="weather-info">
+            <div class="loader" id="loading"></div>
+            <div class="weather-card hidden" id="weather-details">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="" alt="Weather Icon" class="animated-icon">
+                <p id="weather-description"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+            </div>
+            <div class="error-message hidden" id="error-message">City not found. Please try again.</div>
+        </main>
+    </div>
+</body>
+</html>
