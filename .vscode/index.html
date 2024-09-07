@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Weather App</title>
+    <title>Jackson Weather Services</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="main-header">
+        <h1>Jackson Weather Services</h1>
+        <p>Your source for current weather and forecasts</p>
+    </header>
+    
     <div class="container">
         <header class="header">
             <h1 class="app-title">Dynamic Weather App</h1>
@@ -28,8 +33,20 @@
                 <p id="humidity"></p>
                 <p id="wind-speed"></p>
             </div>
+            <div class="forecast-details hidden" id="forecast-details">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-data" id="forecast-data"></div>
+            </div>
             <div class="error-message hidden" id="error-message">City not found. Please try again.</div>
         </main>
     </div>
+    
+    <footer class="main-footer">
+        <p>&copy; 2024 Jackson Weather Services. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
+
+
+
